@@ -19,6 +19,12 @@ add method to your vue parent component
                        this.$refs.captcha.execute()
                    }
                }...
+```
 
+__change recaptcha sitekey__:
 
+/YOURPATH/vue-captcha/src/index.js,
 
+example:
+
+```sitekey: '6LeH4T0UAAAAAHtzh_dRHahDWjpKwaFQP7KHmCB7```
