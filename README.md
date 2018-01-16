@@ -1,10 +1,10 @@
 # vue-captcha
 vue, recaptcha, es5
 
-#####import v-captcha:
+__import v-captcha__:
 ```<script src="/YOURPATH/vue--captcha/src/index.min.js"></script>```
 
-#####usage:
+__usage__:
 ```<v-captcha v-on:verify="YouRFormSendHandler" ref="captchaSecond"></v-captcha>```
 
 ```<input value="Зарегистрироваться" v-on:click="onInitCaptcha('captchaSecond')">```
