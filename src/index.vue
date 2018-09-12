@@ -11,7 +11,7 @@
         },
         computed: {
             grecaptcha: function () {
-                return grecaptcha
+                return window.grecaptcha
             }
         },
         watch: {
@@ -44,21 +44,21 @@
         },
         methods: {
             execute: function () {
-                grecaptcha.execute(this.widgetId)
+                window.grecaptcha.execute(this.widgetId)
             },
             reset: function () {
-                if (grecaptcha) {
-                    grecaptcha.reset(this.widgetId)
+                if (window.grecaptcha) {
+                    window.grecaptcha.reset(this.widgetId)
                 }
             },
             render: function () {
                 var $vm = this;
 
                 setTimeout(function() {
-                    if(typeof grecaptcha === 'undefined') {
+                    if(typeof window.grecaptcha === 'undefined') {
                         $vm.render();
                     } else {
-                        $vm.widgetId = grecaptcha.render($vm.$refs.captcha, {
+                        $vm.widgetId = window.grecaptcha.render($vm.$refs.captcha, {
                             sitekey: $vm.sitekey,
                             size: 'invisible',
                             callback: function (response) {
