@@ -6,6 +6,12 @@
             <v-captcha :sitekey="key" v-on:verify="onVerify" ref="captchaSecond"></v-captcha>
             <input type="submit" @click="onInitCaptcha('captchaSecond')" value="send"/>
         </form>
+        <h2>one more captcha</h2>
+        <form @submit="stopSend">
+            <input type="text" placeholder="enter text">
+            <v-captcha :sitekey="key" v-on:verify="onVerify" ref="captchaFirst"></v-captcha>
+            <input type="submit" @click="onInitCaptcha('captchaFirst')" value="send"/>
+        </form>
     </div>
 </template>
 
