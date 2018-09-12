@@ -1,5 +1,5 @@
 # vue-captcha
-vue, recaptcha, es5
+vue, recaptcha
 
 __import v-captcha__:
 
